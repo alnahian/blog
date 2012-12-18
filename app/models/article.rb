@@ -1,5 +1,5 @@
 class Article < ActiveRecord::Base
-  attr_accessible :body, :excerpt, :location, :published_at, :title
+  attr_accessible :body, :excerpt, :location, :published_at, :title, :category_ids
   
   belongs_to :user 
   has_and_belongs_to_many :categories 
